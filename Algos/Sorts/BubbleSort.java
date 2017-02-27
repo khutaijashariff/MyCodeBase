@@ -1,11 +1,11 @@
-package Sorts;
+package Algos.Sorts;
 
-import javaservices.Swap;
+import JavaBasics.javabasics.Swap;
 /**
  * Created by ANJALI on 01/30/17.
  */
-class BubbleSort {
-    static void bSort(int arr[])
+public class BubbleSort {
+    public static void bSort(int arr[])
     {
         for(int i=0;i<=arr.length;i++) //picks an element
         {

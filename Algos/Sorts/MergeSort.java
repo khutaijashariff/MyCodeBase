@@ -2,7 +2,7 @@ package Algos.Sorts;
 /**
  * Created by ANJALI on 01/30/17.
  */
-class MergeSort {
+public class MergeSort {
     public static void mSort(int[] arr,int start,int end)//this method focuses on dividing the array recursively till the size of the array is 1
     {
         if(start<end)
