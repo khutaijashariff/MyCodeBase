@@ -3,14 +3,18 @@ package CrackingTheCodingInterviewBook.SearchingAndSorting;
 /**
  * Created by ANJALI on 2/26/2017.
  */
-import Algos.Sorts.*;
+
+/* You are given two sorted arrays, A and B, where A has a large enough buffer at the end to hold B.
+Write a method to merge B into A in sorted order.
+ */
+
 class SortedMerge {
     int[] sortedMerge(int[] arrA,int[] arrB)
     {
         int merged=arrA.length-1;
-        for(int i=0;i<arrB.length;i++)
+        for(int arrBElt:arrB)
         {
-            arrA[merged]=arrB[i];
+            arrA[merged]=arrBElt;
             merged--;
         }
         Algos.Sorts.QuickSort.qSort(arrA,0,arrA.length-1);
