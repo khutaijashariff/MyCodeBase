@@ -3,7 +3,7 @@ package Algos.Sorts;
 /**
  * Created by ANJALI on 2/9/2017.
  */
-import JavaBasics.javabasics.Sort;
+import JavaBasics.javaservices.Sort;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package JavaBasics.javabasics;
+package JavaBasics.javaservices;
 
 /**
  * Created by ANJALI on 01/30/17.

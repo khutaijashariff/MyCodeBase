@@ -1,6 +1,6 @@
 package Algos.Sorts;
 
-import JavaBasics.javabasics.Swap;
+import JavaBasics.javaservices.Swap;
 
 /**
  * Created by ANJALI on 01/30/17.
@@ -15,7 +15,7 @@ import JavaBasics.javabasics.Swap;
             qSort(arr,mid+1,end);
         }
     }
-    static int partition(int[] arr,int start,int end)
+   private static int partition(int[] arr,int start,int end)
     {
         int pivot=arr[end];
         int i=start-1;
