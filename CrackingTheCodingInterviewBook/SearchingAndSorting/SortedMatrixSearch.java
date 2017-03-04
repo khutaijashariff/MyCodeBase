@@ -61,6 +61,5 @@ SortedMatrixSearch sms=new SortedMatrixSearch();
 System.out.println("**** In Search of an Element in the Sorted Matrix **** ");
 sms.inputSortedMatrix();
 System.out.println(sms.findElementInSortedMatrix(sms.element));
-
 }
 }
