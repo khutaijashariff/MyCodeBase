@@ -62,8 +62,6 @@ class SortedMerge {
            }
            mergedIndex--;
        }
-
-
      return arrA;
     }
 
