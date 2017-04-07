@@ -38,7 +38,7 @@ import java.util.Scanner;
                     str[1]=temp;
                     System.out.println(str[0] + " "+str[1]);
                 }
-                return (isInserted(str)||isRemoved(str));
+                return (isInserted(str));
             }
             else
                 return false;
@@ -58,25 +58,25 @@ import java.util.Scanner;
             return true;
         }
 
-        boolean isRemoved(String[] str)
-        {
-            int edit=0;
-            int i,j;
-            for( i=0,j=0;i<str[0].length()&&j<str[1].length();i++,j++)
-                if(str[0].charAt(i)!=str[1].charAt(j))
-                {
-                    edit++;
-                    j--;
-                    if(edit>1)
-                        return false;
+         public boolean isInserted(String[] str) {
+              String s1 = str[1];
+              String s2 = str[0];
+        int i1 = 0;
+        int i2 = 0;
+        while(i1<s1.length() && i2<s2.length()) {
+            if(s1.charAt(i1) != s2.charAt(i2)) {
+                if(i1!=i2) { //maintain the same position on each string
+                    return false;
                 }
-            return true;
+                i2++;
+            }else {
+                i1++;
+                i2++;
+            }
         }
+        return true;
+    }
 
-        boolean isInserted(String[] str)
-        {
-            return str[0].matches(str[1]+"+.");
-        }
         public static void main(String args[])throws IOException
         {
             OneEditAway oe=new OneEditAway();
